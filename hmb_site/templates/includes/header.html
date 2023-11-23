@@ -1,27 +1,28 @@
 {% load thumbnail %}
 {% load static %}
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Заказать звонок</a></li>
-      </ul>
-    </header>
-  </div>
-<link type="text/css" href="{% static 'css/headers.css' %}" rel="stylesheet" />
-<header class="p-3 mb-3 border-bottom">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src="{% static 'img/logo.jpg' %}" width="90" height="90"/></svg>
-        </a>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Наша продукция</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">О нас</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Доставка и оплата</a></li>
-          <li><a href="#" class="nav-link px-2 link-body-emphasis">Тренировки</a></li>
-        </ul>
-
-      </div>
+<link type="text/css" href="{% static 'css/carousel.css' %}" rel="stylesheet" />
+<header data-bs-theme="dark">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #003688;">
+  <div class="container-fluid">
+    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src="{% static 'img/logo.png' %}" width="60" height="60"/></svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наша продукция</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">О нас</a>
+        </li>        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Доставка и оплата</a>
+        </li>        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Тренировки</a>
+        </li>
     </div>
-  </header>
+  </div>
+</nav>
+</header>

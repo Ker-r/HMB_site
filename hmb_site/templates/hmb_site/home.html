@@ -5,25 +5,52 @@
 {% load static %}
 
 <link type="text/css" href="{% static 'css/carousel.css' %}" rel="stylesheet" />
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{% static 'img/kisel1.jpg' %}" width="400" height="400">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Интернет магазин мерча команды ИСБ Новосибирск</h1>
+        <p><a class="btn btn-lg btn-primary" style="background-color: #003688;" href="{% url 'shop'%}">Наша продукция</a></p>
+        <p class="lead"></p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
   </div>
+  <hr class="featurette-divider">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Новости команды</h1>
+        <p class="lead text-body-secondary">Здесь вы можете прочитать о новостях команды ИСБ Новосибирск и о предстоящих соревнованиях</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2" style="background-color: #003688;">Читать новости</a>
+        </p>
+      </div>
+    </div>
+  </section>
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="bd-placeholder-img" width="100%" height="100%" src="{% static 'img/cat.jpg' %}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <img class="bd-placeholder-img" width="100%" height="100%" src="{% static 'img/cat.jpg' %}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
       <div class="container">
         <div class="carousel-caption text-start">
           <h1>Акции и хиты продаж</h1>
           <p class="opacity-75"></p>
-          <p><a class="btn btn-lg btn-primary" href="#">Читать подробнее</a></p>
+          <p><a class="btn btn-lg btn-primary" style="background-color: #003688;" href="#">Читать подробнее</a></p>
         </div>
       </div>
     </div>
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="{% static 'img/cat.jpg' %}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
       <div class="container">
         <div class="carousel-caption">
           <h1>Another example headline.</h1>

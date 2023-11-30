@@ -1,49 +1,68 @@
 * {
-   box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
 }
-.product-item {
-   width: 300px;
-   text-align: center;
-   margin: 0 auto;
-   border-bottom: 2px solid #F5F5F5;
-   background: white;
-   font-family: "Open Sans";
-   transition: .3s ease-in;
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #606060;
+    font-size: 14px;
 }
-.product-item:hover {
-   border-bottom: 2px solid #fc5a5a;
+.container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 0 15px;
+    background: white;
 }
-.product-item img {
-   display: block;
-   width: 100%;
+.post-image img {
+    width: 100%;
+    margin: 0 0 20px 0;
 }
-.product-list {
-   background: #fafafa;
-   padding: 15px 0;
+.post h1 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
-.product-list h3 {
-   font-size: 18px;
-   font-weight: 400;
-   color: #444444;
-   margin: 0 0 10px 0;
+.post-meta {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.price {
-   font-size: 16px;
-   color: #fc5a5a;
-   display: block;
-   margin-bottom: 12px;
+time,
+.author {
+    padding-right: 26px;
+    position: relative;
 }
-.button {
-   text-decoration: none;
-   display: inline-block;
-   padding: 0 12px;
-   background: #cccccc;
-   color: white;
-   text-transform: uppercase;
-   font-size: 12px;
-   line-height: 28px;
-   transition: .3s ease-in;
+time:after,
+.author:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #666;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
-.product-item:hover .button {
-   background: #fc5a5a;
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 0 45px;
+    }
+    .post-image img {
+        float: right;
+        width: 300px;
+        margin: 0 0 20px 20px;
+    }
+    .post-header {
+        padding-left: 26px;
+        border-left: 4px solid #D8D8D8;
+        margin-left: -30px;
+    }
 }

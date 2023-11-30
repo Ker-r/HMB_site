@@ -13,7 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     # Перечисляем поля, которые должны отображаться в админке
-    list_display = ('pk', 'title', )
+    list_display = ('pk', 'title', 'slug', )
     # Добавляем интерфейс для поиска по названию и по типу товара
     search_fields = ('title', )
     # Это свойство сработает для всех колонок: где пусто — там будет эта строка
